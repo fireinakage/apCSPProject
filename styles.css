@@ -1,0 +1,170 @@
+/* Credits to Claude AI for assistanace on issues with the navigation bar 
+link to the chat : https://claude.ai/share/94f53c32-b2a2-40ec-9a20-1b03cfa0eac9 */
+
+/* #211C84
+#B153D7
+#F375C2  */
+
+body {
+  overflow-x:clip;
+  overflow-y: visible;
+  background-color: #211C84;
+  margin: 0;
+  color: white;
+  font-family: "Bitcount Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+  min-height: 100%;
+  background: url(imgs/train.png) rgba(33, 28, 132, 0.75);
+  background-size: cover;
+  background-blend-mode: luminosity;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  animation: moveRight 20s linear infinite;
+  /* box-shadow: inset 0 0 0 20000px rgba(33, 28, 132, 0.45); */
+}
+
+h1 {
+  color: white;
+  text-align: center;
+
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+navbar {
+  background-color: #F375C2;
+  vertical-align: middle;
+  font-size: 20px;
+  /* height: 35px; */
+  padding-top: 0px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  min-height: 50px;
+  align-items: stretch
+}
+
+#trailerVid {
+  display: grid;
+  place-items: center;
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+  border: 5px  #6965b1 solid;
+  border-radius: 10px;
+}
+
+.vid {
+  display: grid;
+  place-items: center;
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+  border: 5px  #6965b1 solid;
+  border-radius: 10px;
+}
+
+@keyframes moveRight {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+
+a {
+  color: white;
+}
+
+navbar a {
+  padding: 10px;
+  margin-top: 5px;
+  margin: 0px;
+  text-decoration: none;
+  overflow: clip;
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  
+}
+
+navbar a:hover {
+  background-color: #fda0d9;
+}
+
+navbar a:active {
+  background-color: #ee6dbc;
+}
+
+#activepage {
+   background-color: #bf5a98;
+}
+
+navbar a:visited {
+  color: white;
+  padding: 10px;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+#searchbar {
+  float: right;
+  vertical-align: middle;
+  color: black;
+  font-size: 17px;
+  border-radius: 10px;
+  border: none;
+  margin-right: 16px;
+  display: flex;
+  padding: 5px;
+  width: 25%;
+  overflow: hidden;
+  margin-top:0px;
+  margin-left: auto;
+  align-self: center;
+}
+
+.character {
+  display:block;
+  background-color:  #5854a0;
+  margin: auto;
+  width: 55%;
+  padding: 10px;
+  border: 7px #6965b1 solid;
+  margin-bottom: 20px;
+}
+
+.character img {
+  width: 75%;
+  display: block;
+  margin: auto;
+  border: 4px #6965b1 solid
+}
+
+@media only screen and (max-width: 575px) {
+  #searchbar {
+    display: none;
+  }
+}
+
+#header {
+  padding: 25px;
+  background-color: rgb(143, 66, 174, 0.99);
+  margin: 0;
+  margin-bottom: 25px;
+}
